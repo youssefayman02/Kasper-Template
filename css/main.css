@@ -206,6 +206,16 @@ header nav .form i {
     max-width: 500px;
 }
 
+@media (max-width: 767px) {
+    .landing .overlay .text {
+        width: 100%;
+    }
+
+    .landing .overlay .text .content {
+        max-width: 100%;
+    }
+}
+
 .landing .overlay .text .content h2 {
     font-size: 32px;
     font-weight: normal;
@@ -216,6 +226,49 @@ header nav .form i {
 .landing .overlay .text .content p {
     font-size: 14px;
     line-height: 2;
+}
+
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
+
+.landing .icon-left {
+    left: 30px;
+}
+
+.landing .icon-right {
+    right: 30px;
+}
+
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.landing .bullets li.active-bullet {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 /* End Landing */
