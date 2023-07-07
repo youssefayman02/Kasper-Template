@@ -1,3 +1,11 @@
+/* Start Global Variables */
+:root {
+    --main-color: #19c8fa;
+    --transition-duration: 0.3s;
+}
+
+/* End Global Variables */
+
 /* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
@@ -76,6 +84,48 @@ header .logo img {
 
 header nav {
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: var(--transition-duration, 0.3s);
+    padding: 40px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: var(--main-color, #19c8fa);
+    border-bottom: 1px solid var(--main-color, #19c8fa);
+}
+
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+
+header nav .form i {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
 }
 
 /* End Header */
