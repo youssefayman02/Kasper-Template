@@ -519,7 +519,7 @@ header nav .form i {
 }
 
 .portfolio .more {
-    text-decoration:  none;
+    text-decoration: none;
     background-color: var(--main-color);
     color: white;
     padding: 15px 20px;
@@ -531,3 +531,55 @@ header nav .form i {
 }
 
 /* End Portfolio */
+
+/* Start Video */
+
+.video {
+    position: relative;
+}
+
+.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.video video {
+    width: 100%;
+}
+
+.video .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    background: var(--transparent-color);
+    padding: 50px;
+}
+
+.video .text h2 {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.video .text p {
+    margin-bottom: 30px;
+}
+
+.video .text button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* End Video */
